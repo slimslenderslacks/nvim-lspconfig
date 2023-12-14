@@ -2612,17 +2612,13 @@ require'lspconfig'.docker_ai.setup{}
 
 
 **Default values:**
-  - `cmd` : 
-  ```lua
-  { "/Users/slim/atomisthq/lsp/start.sh" }
-  ```
   - `filetypes` : 
   ```lua
   {}
   ```
   - `root_dir` : 
   ```lua
-  root_pattern("Dockerfile")
+  root_pattern(".git")
   ```
 
 
@@ -2679,17 +2675,13 @@ require'lspconfig'.docker_lsp.setup{}
 
 
 **Default values:**
-  - `cmd` : 
-  ```lua
-  { "/Users/slim/atomisthq/lsp/start.sh" }
-  ```
   - `filetypes` : 
   ```lua
-  { "dockerfile", "clojure" }
+  { "dockerfile", "dockerignore", "dockercompose", "markdown", "datalog-edn" }
   ```
   - `root_dir` : 
   ```lua
-  root_pattern("Dockerfile")
+  root_pattern(".git")
   ```
 
 
